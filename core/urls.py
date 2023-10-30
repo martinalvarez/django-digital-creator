@@ -20,6 +20,6 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('copyright/', view=views.copyright),
     path('music/', include('music.urls')),
-    path('copyright/', view=views.copyright)
 ]
