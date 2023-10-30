@@ -16,23 +16,23 @@ source myenv/bin/activate
 pip install Django
 
 ### Create the core application
-python django-admin core .
+    python django-admin core .
 
 ### Run the server to test that everything is working properly
-python manage.py runserver
+    python manage.py runserver
 
 ## Create a new app called music
-python manage.py startapp music
+    python manage.py startapp music
 
 ## Add the new app in core/settings.py
 Add the 'music' element in INSTALLED_APPS list.
 
 ### Create a view in music app
-    The funciton handler will return a HttpResponse object
+The function handler will return a HttpResponse object
 
 ### Create urls.py file in music app
- Add the urlpatterns list. Each element is a path element where you define the path and the view
+Add the urlpatterns list. Each element is a path element where you define the path and the view
 
- ### Create templates folder
- Add html files and use render function passing the request and the html name file. You can send a context object to use it and show dynamic content
+### Create templates folder
+Add html files and use render function passing the request and the html name file. You can send a context object to use it and show dynamic content
 
