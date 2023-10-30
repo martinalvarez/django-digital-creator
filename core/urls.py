@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from music import views
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('music/', include('music.urls'))
+    path('music/', include('music.urls')),
+    path('copyright/', view=views.copyright)
 ]
