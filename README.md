@@ -39,9 +39,8 @@ Add html files and use render function passing the request and the html name fil
 ### Models
 Add your models that will be mapped with tables in the DB.
 
-### Migrations
-After creating/updating models, run:
+### After creating/updating models, run:
     python manage.py migrate
-After creating the migrations files apply them running:
+### After creating the migrations files apply them running:
     python manage.py makemigrations
 
