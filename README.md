@@ -40,7 +40,10 @@ Add html files and use render function passing the request and the html name fil
 Add your models that will be mapped with tables in the DB.
 
 ### After creating/updating models, run:
-    python manage.py migrate
-### After creating the migrations files apply them running:
     python manage.py makemigrations
+    
+### After creating the migrations files apply them running:
+    python manage.py migrate
 
+### You can create an empty migration to execute sql statements
+    python manage.py makemigrations music --empty    
