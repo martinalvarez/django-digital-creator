@@ -4,16 +4,16 @@ django project
 ## Steps
 
 ### Clone the empty repository
-git clone https://github.com/martinalvarez/django-digital-creator.git
+    git clone https://github.com/martinalvarez/django-digital-creator.git
 
 ### Install virtual environment
-python -m venv myenv
+    python -m venv myenv
 
 ### Active the virtual environment
-source myenv/bin/activate
+    source myenv/bin/activate
 
 ### Install Django
-pip install Django
+    pip install Django
 
 ### Create the core application
     python django-admin core .
@@ -35,4 +35,13 @@ Add the urlpatterns list. Each element is a path element where you define the pa
 
 ### Create templates folder
 Add html files and use render function passing the request and the html name file. You can send a context object to use it and show dynamic content
+
+### Models
+Add your models that will be mapped with tables in the DB.
+
+### Migrations
+After creating/updating models, run:
+    python manage.py migrate
+After creating the migrations files apply them running:
+    python manage.py makemigrations
 
