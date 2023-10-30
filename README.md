@@ -32,3 +32,7 @@ Add the 'music' element in INSTALLED_APPS list.
 
 ### Create urls.py file in music app
  Add the urlpatterns list. Each element is a path element where you define the path and the view
+
+ ### Create templates folder
+ Add html files and use render function passing the request and the html name file. You can send a context object to use it and show dynamic content
+
