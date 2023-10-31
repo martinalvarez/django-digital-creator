@@ -15,6 +15,7 @@ def get_albums(request):
         for album in albums:
             data.append({
                 'id': album.id,
+                'image_url': album.image_url,                
                 'name': album.name,
                 'release': album.release
             })

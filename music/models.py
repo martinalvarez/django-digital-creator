@@ -5,8 +5,10 @@ from django.db import models
 class Artist(models.Model):
     name = models.CharField(max_length=255, null=False)
 
+
 class Album(models.Model):
     artist = models.ForeignKey(Artist, null=False, on_delete=models.CASCADE)    
+    image_url = models.URLField()    
     name = models.CharField(max_length=255, null=False)
     release = models.PositiveSmallIntegerField()
 
