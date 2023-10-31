@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseServerError, JsonResponse
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from .mocked_data import albums
 from .models import Album, Artist
 
@@ -22,6 +24,10 @@ def get_albums(request):
         return JsonResponse(data, safe=False)        
     except Exception as error:
         return HttpResponseServerError("DB error")
+
+@api_view()
+def albums_list(request):
+    return Response('coming soon')
 
 
 def get_artists(request):

@@ -83,3 +83,19 @@ CORS_ALLOWED_ORIGINS = [
 
 ### Install Django Rest Framework
     pip install djangorestframework
+
+### Add 'rest_framework' in settings
+```
+INSTALLED_APPS = [
+    ...
+    'rest_framework',
+    ...
+]
+```
+
+### Create a new view using Response object decorated with @api_view() to inject into the handler the Response object
+```
+@api_view()
+def albums_list(request):
+    return Response('coming soon')
+```
